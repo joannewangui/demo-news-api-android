@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/technology"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/top_button"
+            android:layout_width="150dp"
+            android:layout_height="110dp"
+            android:scaleType="centerCrop"
+            android:padding="25dp"
+            android:src="@drawable/tech"
+            android:background="#CE1C01"/>
+
+        <Button
+            android:id="@+id/bottom_button"
+            android:layout_below="@+id/top_button"
+            android:textColor="#ffffff"
+            android:text="Technology"
+            android:textStyle="bold"
+            android:fontFamily="@font/bariol_bold"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:background="#FFA8B1"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/politics"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/technology"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/top_politics"
+            android:layout_width="150dp"
+            android:layout_height="110dp"
+            android:scaleType="centerCrop"
+            android:padding="25dp"
+            android:src="@drawable/politics"
+            android:background="#101010"/>
+
+        <Button
+            android:id="@+id/bottom_politics"
+            android:layout_below="@+id/top_politics"
+            android:textColor="#000000"
+            android:text="POLITICS"
+            android:textStyle="bold"
+            android:fontFamily="@font/bariol_bold"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:background="#DCDCDC"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/sports"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/politics"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/top_sports"
+            android:layout_width="150dp"
+            android:layout_height="110dp"
+            android:scaleType="centerCrop"
+            android:padding="25dp"
+            android:src="@drawable/sports"
+            android:background="#ffffff"/>
+
+        <Button
+            android:id="@+id/bottom_sports"
+            android:layout_below="@+id/top_sports"
+            android:textColor="#ffffff"
+            android:text="SPORTS"
+            android:textStyle="bold"
+            android:fontFamily="@font/bariol_bold"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:background="#000000"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/business"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="25dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/top_business"
+            android:layout_width="150dp"
+            android:layout_height="110dp"
+            android:scaleType="centerCrop"
+            android:padding="25dp"
+            android:src="@drawable/biz"
+            android:background="#F3F5F4"/>
+
+        <Button
+            android:id="@+id/bottom_business"
+            android:layout_below="@+id/top_business"
+            android:textColor="#000000"
+            android:text="Business"
+            android:textStyle="bold"
+            android:fontFamily="@font/bariol_bold"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:background="#FDFDFD"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/music"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="25dp"
+        android:layout_below="@+id/business"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/top_music"
+            android:layout_width="150dp"
+            android:layout_height="110dp"
+            android:scaleType="centerCrop"
+            android:padding="25dp"
+            android:src="@drawable/music"
+            android:background="#003466"/>
+
+        <Button
+            android:id="@+id/bottom_music"
+            android:layout_below="@+id/top_music"
+            android:textColor="#ffffff"
+            android:text="MUSIC"
+            android:textStyle="bold"
+            android:fontFamily="@font/bariol_bold"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:background="#003466"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/science"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="25dp"
+        android:layout_below="@+id/music"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/top_science"
+            android:layout_width="150dp"
+            android:layout_height="110dp"
+            android:scaleType="centerCrop"
+            android:padding="25dp"
+            android:src="@drawable/science"
+            android:background="#FED000"/>
+
+        <Button
+            android:id="@+id/bottom_science"
+            android:layout_below="@+id/top_science"
+            android:textColor="#ffffff"
+            android:text="SCIENCE"
+            android:textStyle="bold"
+            android:fontFamily="@font/bariol_bold"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:background="#000000"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff">
+
+
+
+        <RelativeLayout
+            android:id="@+id/full_intro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#000000">
+
+            <ImageView
+                android:id="@+id/full_image"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerInside"/>
+
+            <TextView
+                android:id="@+id/full_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/full_image"
+                android:textColor="#ffffff"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/bariol_bold"
+                android:padding="20dp"
+                android:text=""/>
+
+            <TextView
+                android:id="@+id/full_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/full_title"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="10dp"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:text=""/>
+
+            <View
+                android:id="@+id/full_view"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="15dp"
+                android:layout_below="@+id/full_time"
+                android:background="#ffffff"/>
+
+            <TextView
+                android:id="@+id/full_author"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:padding="10dp"
+                android:layout_below="@id/full_view"
+                android:gravity="center_vertical|center_horizontal"
+                android:background="@drawable/orange_background"
+                android:fontFamily="@font/bariol_bold"
+                android:textSize="18sp"
+                android:textColor="#B35852"
+                android:textStyle="bold"
+                android:text="BY THE TIMES EDITORIAL BOARD"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/full_read"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/full_intro"
+            android:textSize="18sp"
+            android:layout_margin="20dp"/>
+
+        <View
+            android:id="@+id/view_two"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@id/full_read"
+            android:background="#8000"/>
+
+        <WebView
+            android:id="@+id/webView"
+            android:layout_below="@id/view_two"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </WebView>
+
+    </RelativeLayout>
+</android.support.v4.widget.NestedScrollView>
